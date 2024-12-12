@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.11 display flex 부모박스(container)에 적용하는 속성</title>
+    <style>
+        .box{background-color: yellow;padding: 10px;}
+        .box > .item{background-color: green;width: 50px;height: 50px;}
+        
+        .container{display: flex;justify-content: space-around;}
+        /* flex 방향에 따라서, justify-content정렬이 달라집니다 */
+    </style>
+</head>
+<body>
+    <h3>justify-content(주축 정렬)</h3>
+    
+    <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr/>
+
+    <h3>align-item 반대축 정렬(한 줄일 때)</h3>
+    <style>
+        .container2{height: 300px; display: flex; align-items: baseline;}
+        /*
+        stretch - 교차축 기준으로 끝까지 채움
+        flex-start - 교차축 기준으로 시작에 붙인다
+        flex-end - 교차축 기준으로 끝에 붙인다
+        center - 교차축 기준으로 중심으로 붙인다
+        baseline - 글자 높이가 다를 경우 text 라인 기준으로 박스를 맞춘다 or 글자기준으로 상자를 정렬
+        */
+    </style>
+    <div class="container2 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr/>
+
+    <h3>align-content (두 줄 이상일 때 교차축 정렬)</h3>
+
+    <style>
+        .container3{display: flex; flex-wrap: wrap; height: 300px;
+        align-content: space-around;}
+        /*
+        stretch(기본값) - 아이템 크기가 고정x (높이 지정이 없어야 함)
+        flex-start - 아이템을 시작 지점으로 옮긴다
+        flex-end - 아이템을 끝 지점으로 옮긴다
+        center - 아이템을 중심으로 옮긴다
+        space-between - 양 끝에 붙이고 균등하게 분배
+        spaece-around - 모두 똑같이 균등하게 분배
+        */
+    </style>
+    <div class="container3 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">flex1</div>
+        <div class="item">flex2</div>
+        <div class="item">flex3</div>
+        <div class="item">flex4</div>
+        <div class="item">flex5</div>
+        <div class="item">flex6</div>
+        <div class="item">flex7</div>
+        <div class="item">flex8</div>
+        <div class="item">flex9</div>
+        <div class="item">flex10</div>
+    </div>
+</body>
+</html>

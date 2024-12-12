@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            overflow: hidden;
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .box>.profile,
+        .box>.content {
+            float: left;
+            width: 50%;
+        }
+
+        .price {overflow: hidden;}
+        .price>p {float: left;}
+        .price>strong {float: right;}
+
+        .control{margin-top: 40px;}
+
+        .order{overflow: hidden;}
+        .order > button{float: left; width: 50%;}
+    </style>
+</head>
+
+<body>
+    <div class="box">
+            <div class="profile"><!-- 사진 영역 -->
+                사진....
+            </div>
+        <div class="content"> <!-- 컨텐츠 영역 -->
+            <p>제목 : ~~~~~~~</p>
+            <p>내용 : ~~~~~~~</p>
+            <div class="control">
+                <div class="price">
+                    <p>가격</p>
+                    <strong>10000원</strong>
+                </div>
+                <div class="order">
+                    <button>장바구니</button>
+                    <button>구매하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

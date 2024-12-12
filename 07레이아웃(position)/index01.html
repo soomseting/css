@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .list {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        p{height: 50px;}
+
+        .inner1 {
+            background: #faa;
+        }
+
+        .inner2 {
+            /*
+                규칙1. left,right 중 1개, top,bottom중에 1개를 이용해서 위치 조정을 한다.
+                규칙2. 기준이 될 부모박스에 relative를 넣으면 됩니다.
+            */
+
+            background: #afa;
+            position: absolute;
+            /* 부모에 relative가 있는 태그 기준으로 움직이게 됩니다.없으면 body 기준으로 움직임.*/
+            /* left: 50%;
+            top: 50%; */
+          
+        }
+
+        .inner3 {
+            background: #aaf;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <div class="content">
+            <p class="inner1">포지션</p>
+            <p class="inner2">포지션</p>
+            <p class="inner3">포지션</p>
+        </div>
+    </div>
+</body>
+
+</html>

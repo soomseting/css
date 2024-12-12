@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+/* reply */
+.reply {
+  border: 1px solid black;
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+}
+
+.reply > img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+}
+
+/* content */
+.content {
+  padding-left: 90px;
+  overflow: hidden;
+}
+.content > textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 150px;
+  resize: vertical; /* 세로로만 창 늘리게 */
+}
+.content > .left {
+  float: left;
+}
+.content > .left > input {
+  display: block;
+}
+.content > .right {
+  float: right;
+}

@@ -1,0 +1,16 @@
+/* 
+디자인을 시작할 때, 여백을 없애거나, 태그의 기본 속성들을 지울 때 사용 
+*/
+*{margin: 0;padding: 0; }
+b{color: lightblue;}
+strong, small,i{color: red;}
+#a1{color: green;}
+.b1{color: aqua;}
+
+.abox p{color: brown;}
+.bbox > p {color: blueviolet;} /* 직계자식 */
+
+input[type="date"], 
+input[type="password"] {color: red;}
+
+a[href="example"] { color: chocolate;}

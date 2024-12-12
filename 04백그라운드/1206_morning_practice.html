@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어제 했던 거 응용? 복습?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 900px;
+            height: 900px;
+        }
+
+        /* header */
+        .header {
+            width: 900px;
+            height: 150px;
+            /* border: 1px solid black; */
+            background: #aff;
+        }
+
+        .logo {
+            text-align: center;
+            /* border: 1px solid black; */
+            width: 900px;
+            height: 100px;
+        }
+
+        .logo>img {
+            width: 80px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .sub {
+            /* background: #faa; */
+            width: 900px;
+            height: 50px;
+        }
+
+        .drop li a {
+            list-style: none;
+            text-decoration: none;
+            color: darkgreen;
+        }
+
+        .drop li {
+            display: inline-block;
+            width: 80px;
+            height: 50px;
+            /* border: 1px solid black; */
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .drop {
+            text-align: right;
+        }
+
+        .drop li:hover {
+            background: #aaf;
+            transition: 0.2s;
+        }
+
+        .drop li:hover a {
+            color: white;
+            transition: 0.2s;
+        }
+
+        /* section */
+        .section {
+            width: 900px;
+            height: 500px;
+            /* background: #faf; */
+            background-image: url("img/back.jpg");
+            background-size: contain;
+        }
+
+        .top_sec>input:checked {
+            display: none;
+        }
+
+        .mid_sec {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: yellow;
+            border-radius: 40px;
+        }
+
+        /* footer */
+        .footer {
+            width: 900px;
+            height: 250px;
+            background: #faa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><img src="img/css3.png" alt="#"></div>
+            <div class="sub">
+                <ul class="drop">
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">메뉴</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="top_sec">
+                <input type="checkbox">이거 누를 때 버튼 사라짐
+            </div>
+            <div class="mid_sec">asd</div>
+            <div class="bot_sec">asd</div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>

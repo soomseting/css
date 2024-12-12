@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* header */
+header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+.h_wrap {
+  overflow: hidden;
+}
+
+.l_icon {
+  float: left;
+  margin: -40px 0 0 15px;
+}
+
+.title > h1 {
+  color: #000;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.r_title {
+  float: right;
+  margin: -45px 0 0 10px;
+}
+.r_title ul li {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+.r_title ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/* nav */
+.menu {
+  width: 100%;
+  text-align: center;
+}
+.menu ul li {
+  display: inline-block;
+  padding: 45px 30px;
+}
+.menu ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* content */
+.main {
+  background-image: url("img/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  border-top: 3px solid red;
+}
+.m_title1,
+.m_title2 {
+  color: #fff;
+  text-align: center;
+}
+.m_title1 {
+  font-size: 50px;
+  letter-spacing: 15px;
+  padding: 100px 0 30px 0;
+  font-weight: 500;
+}
+.m_title2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* section */
+section > .sec_title {
+  text-align: center;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  border-bottom: 3px dashed lightgray;
+  padding: 10px;
+}
+.sub_menu {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  border-bottom: 3px solid lightgray;
+}
+.sub_menu ul li {
+  display: inline-block;
+  padding: 40px 40px 60px 40px;
+}
+
+.sec_title {
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  overflow: hidden;
+  padding: 10px;
+}
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.f_left,
+.f_right p {
+  font-size: 15px;
+}

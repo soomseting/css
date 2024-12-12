@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { margin: 0; padding: 0; text-decoration: none;}
+        ul,li { list-style: none;}
+        header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            background: #aff;
+        }
+
+        .logo {text-align: center;}
+
+        .menu { text-align: center; background: #faa;}
+
+        .menu>ul>li { display: inline-block;}
+
+        section {
+            height: 2000px;
+            background: #afa;
+            margin-top: 121px;
+        }
+
+        .aside {
+            position: fixed;
+            background: #faf;
+            top: 10px;
+            right: 10px;
+            z-index: 10; /* 포지션이 겹칠 때 우선순위 (큰 값일 수록 위로 배치 됩니다.) */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 포지션이 겹칠 때 우선순위를 지정하는 속성 -->
+    <aside class="aside">
+        <p>TOP</p>
+    </aside>
+    <header>
+        <div class="logo">
+            <img src="img/bgimg.png" alt="#">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section>
+        컨텐츠영역.....
+    </section>
+</body>
+
+</html>

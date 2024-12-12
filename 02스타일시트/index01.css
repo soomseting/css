@@ -1,0 +1,6 @@
+/* css 주석  - css는 중복이 가능하고, 마지막에 사용한 속성이 적용됨.*/
+* {margin: 0; padding: 0;}
+
+p{color: aqua;}
+
+

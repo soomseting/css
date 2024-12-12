@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap .inner {
+            display: inline;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            /* 인라인요소는 박스 너비 설정x */
+        }
+
+        .wrap span {
+            display: block;
+        }
+
+        .box div {
+            display: inline-block;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .content {
+            display: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .gnb>li {
+            display: inline-block;
+        }
+
+        .gnb>li>a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 18px;
+            color: #000;
+            text-decoration: none;
+        }
+        .gnb{text-align: center;}
+        .gnb >li>a:hover{
+            background: #faa;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+    </div>
+
+    <div class="wrap">
+        <span>박스</span>
+        <span>박스</span>
+        <span>박스</span>
+    </div>
+
+    <div class="box">
+        <div>인라인블럭</div>
+        <div>인라인블럭</div>
+        <div>인라인블럭</div>
+    </div>
+
+    <div class="content">안보이게 하기!</div>
+
+    <ul class="gnb">
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+        <li><a href="#">메뉴</a></li>
+    </ul>
+</body>
+
+</html>
